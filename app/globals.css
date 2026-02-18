@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: 15 23 42; /* slate-900 */
+  --accent: 250 204 21; /* yellow-400 */
+}
+
+body {
+  @apply bg-slate-900 text-slate-100 antialiased;
+}
+
+/* Responsive table scroll on small screens */
+.table-wrap {
+  @apply overflow-x-auto -mx-4 sm:mx-0;
+}
